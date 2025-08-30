@@ -1,0 +1,34 @@
+{
+  "name": "alpine-dashboard",
+  "version": "1.0.0",
+  "description": "Modern, responsive mini dashboard built with Alpine.js",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "npx serve .",
+    "dev": "live-server ."
+  },
+  "keywords": [
+    "alpine.js",
+    "dashboard",
+    "responsive",
+    "dark-mode",
+    "javascript",
+    "charts",
+    "widgets"
+  ],
+  "author": "Serhat",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kullanici-adi/alpine-dashboard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kullanici-adi/alpine-dashboard/issues"
+  },
+  "homepage": "https://github.com/kullanici-adi/alpine-dashboard#readme"
+}

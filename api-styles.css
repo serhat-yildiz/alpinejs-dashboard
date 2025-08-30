@@ -1,0 +1,109 @@
+/* Additional styles for API integration */
+
+/* Spin animation for loading icons */
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Z-index utilities */
+.z-1000 {
+  z-index: 1000 !important;
+}
+
+/* Modal and dropdown z-index fixes */
+.dropdown-menu {
+  z-index: 9999 !important;
+  position: fixed !important;
+}
+
+.modal-overlay {
+  z-index: 10000 !important;
+}
+
+.modal-content {
+  z-index: 10001 !important;
+}
+
+/* Enhanced loading states */
+.loading-enhanced {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(59, 130, 246, 0.05),
+    transparent
+  );
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+/* Real-time data indicators */
+.live-indicator {
+  position: relative;
+}
+
+.live-indicator::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 8px;
+  height: 8px;
+  background-color: #10b981;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.1);
+  }
+}
+
+/* API status indicators */
+.api-status-success {
+  color: #10b981;
+}
+
+.api-status-error {
+  color: #ef4444;
+}
+
+.api-status-loading {
+  color: #f59e0b;
+}
+
+/* Crypto price change indicators */
+.price-up {
+  color: #10b981;
+}
+
+.price-down {
+  color: #ef4444;
+}
+
+.price-neutral {
+  color: #6b7280;
+}
