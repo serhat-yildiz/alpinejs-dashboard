@@ -5,67 +5,67 @@ function appData() {
     showProfile: false,
     showSettings: false,
     showLogoutConfirm: false,
-    
+
     // Settings data
     settings: {
       notifications: {
         realtime: true,
-        email: false
+        email: false,
       },
       api: {
         refreshInterval: 30,
-        autoRefresh: true
+        autoRefresh: true,
       },
       dashboard: {
         animations: true,
-        compact: false
-      }
+        compact: false,
+      },
     },
-    
+
     // Methods
     init() {
       this.loadSettings()
     },
-    
+
     logout() {
       this.showLogoutConfirm = true
     },
-    
+
     confirmLogout() {
       // Simulate logout process
       showNotification('Logging out...', 'info')
-      
+
       setTimeout(() => {
         // Clear user data
         localStorage.removeItem('dashboardTasks')
         localStorage.removeItem('userSettings')
-        
+
         // Show logout success
         showNotification('Successfully logged out!', 'success')
-        
+
         // Simulate redirect to login
         setTimeout(() => {
           showNotification('Redirecting to login...', 'info')
           // In a real app, you would redirect to login page
           // window.location.href = '/login'
         }, 1000)
-        
+
         this.showLogoutConfirm = false
       }, 1500)
     },
-    
+
     saveSettings() {
       localStorage.setItem('userSettings', JSON.stringify(this.settings))
       showNotification('Settings saved successfully!', 'success')
       this.showSettings = false
     },
-    
+
     loadSettings() {
       const saved = localStorage.getItem('userSettings')
       if (saved) {
         this.settings = { ...this.settings, ...JSON.parse(saved) }
       }
-    }
+    },
   }
 }
 

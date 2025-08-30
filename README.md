@@ -26,6 +26,7 @@ A modern, responsive, and fully-featured mini dashboard application built with A
 ## 🛠️ Technologies & APIs
 
 ### Frontend Technologies
+
 - **Alpine.js 3.x** - Reactive JavaScript framework
 - **Tailwind CSS** - Utility-first CSS framework
 - **Chart.js** - Interactive chart rendering
@@ -33,12 +34,14 @@ A modern, responsive, and fully-featured mini dashboard application built with A
 - **Vanilla JavaScript** - Core functionality
 
 ### External APIs
+
 - **CoinGecko API** - Real-time cryptocurrency prices
 - **JSONPlaceholder API** - Sample news and activity data
 - **RandomUser API** - User profile data generation
 - **Open-Meteo API** - Weather information
 
 ### Storage & Performance
+
 - **localStorage** - Client-side data persistence
 - **CSS Grid & Flexbox** - Advanced layout systems
 - **CSS Variables** - Dynamic theming
@@ -179,6 +182,7 @@ Edit chart settings in `script.js` > `createChart()` function.
 ### Real-time Data
 
 The application fetches real-time data from:
+
 - **CoinGecko**: Bitcoin, Ethereum, BNB prices every 30 seconds
 - **JSONPlaceholder**: Sample news and activity data
 - **RandomUser**: User profile information
